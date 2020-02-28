@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -18,29 +19,26 @@
 
     <EditText
         android:id="@+id/mainName"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="410dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginBottom="273dp"
+        android:layout_width="208dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" tools:targetApi="o"/>
+        app:layout_constraintTop_toBottomOf="@+id/mainGoButton"
+        tools:targetApi="o" />
 
     <Button
         android:id="@+id/mainGoButton"
         android:layout_width="81dp"
         android:layout_height="66dp"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="8dp"
         android:onClick="sendMessage"
         android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
